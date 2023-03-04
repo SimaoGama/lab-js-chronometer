@@ -14,22 +14,34 @@ let splits = document.getElementById('splits');
 function printTime() {
   printMinutes();
   printSeconds();
-  printCentiseconds();
+  //printCentiseconds();
 }
 
 function printMinutes() {
-  minUni.innerHTML = chronometer.computeTwoDigitNumber(chronometer.getMinutes())[1];
-  minDec.innerHTML = chronometer.computeTwoDigitNumber(chronometer.getMinutes())[0];
+  minUni.innerHTML = chronometer.computeTwoDigitNumber(
+    chronometer.getMinutes()
+  )[1];
+  minDec.innerHTML = chronometer.computeTwoDigitNumber(
+    chronometer.getMinutes()
+  )[0];
 }
 
 function printSeconds() {
-  secUni.innerHTML = chronometer.computeTwoDigitNumber(chronometer.getSeconds())[1];
-  secDec.innerHTML = chronometer.computeTwoDigitNumber(chronometer.getSeconds())[0];
+  secUni.innerHTML = chronometer.computeTwoDigitNumber(
+    chronometer.getSeconds()
+  )[1];
+  secDec.innerHTML = chronometer.computeTwoDigitNumber(
+    chronometer.getSeconds()
+  )[0];
 }
 
 function printCentiseconds() {
-  centisecUni.innerHTML = chronometer.computeTwoDigitNumber(chronometer.getCentiseconds())[1];
-  centisecDec.innerHTML = chronometer.computeTwoDigitNumber(chronometer.getCentiseconds())[0];
+  centisecUni.innerHTML = chronometer.computeTwoDigitNumber(
+    chronometer.getCentiseconds()
+  )[1];
+  centisecDec.innerHTML = chronometer.computeTwoDigitNumber(
+    chronometer.getCentiseconds()
+  )[0];
 }
 
 function printSplit() {
